@@ -1,6 +1,6 @@
 {
   "name": "@aayushgarg14/expo-mixpanel-analytics",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Mixpanel integration for use with React Native apps built on Expo.",
   "main": "index.js",
   "scripts": {
