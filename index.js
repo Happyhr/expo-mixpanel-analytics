@@ -39,7 +39,7 @@ export default class ExpoMixpanelAnalytics {
   }
 
   alias(UNIQUE_ID) {
-    this.aliasId = UNIQUE_ID
+    this.aliasId = UNIQUE_ID;
   }
 
   track(name, props) {
@@ -113,8 +113,9 @@ export default class ExpoMixpanelAnalytics {
   _pushEvent(event) {
     let data = {
       event: event.name,
-      properties: event.props
+      properties: event.props || {}
     };
+
     if (this.userId) {
       data.properties.distinct_id = this.userId;
     }
