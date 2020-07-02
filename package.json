@@ -23,7 +23,7 @@
     "url": "https://github.com/codekadiya/expo-mixpanel-analytics/issues"
   },
   "dependencies": {
-    "buffer": "^5.0.8"
+    "buffer": "^5.1.0"
   },
   "peerDependencies": {
     "expo": "^34.0.1",
