@@ -14,6 +14,7 @@ export default class ExpoMixpanelAnalytics {
 
     this.token = token;
     this.userId = null;
+    this.aliasId = null;
     this.clientId = Constants.deviceId;
     this.identify(this.clientId);
 
@@ -35,6 +36,10 @@ export default class ExpoMixpanelAnalytics {
       this.ready = true;
       this._flush();
     });
+  }
+
+  alias(UNIQUE_ID) {
+    this.aliasId = UNIQUE_ID
   }
 
   track(name, props) {
@@ -96,6 +101,7 @@ export default class ExpoMixpanelAnalytics {
     if (this.userId) {
       const data = {
         $token: this.token,
+        $alias: this.aliasId,
         $distinct_id: this.userId
       };
       data[`$${operation}`] = props;
