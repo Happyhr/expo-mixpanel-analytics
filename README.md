@@ -6,7 +6,8 @@ Mixpanel integration for use with React Native apps built on Expo.
 ## Installation
 
 ```
-npm install https://github.com/aayushgarg14/expo-mixpanel-analytics.git --save
+npm install --save @aayushgarg14/expo-mixpanel-analytics
+
 ```
 
 ## Import
@@ -20,7 +21,9 @@ import ExpoMixpanelAnalytics from 'expo-mixpanel-analytics';
 ```
 const analytics = new ExpoMixpanelAnalytics(MIXPANEL_TOKEN);
 
-analytics.identify("13793");
+analytics.alias(UNIQUE_ID);
+
+analytics.identify(UNIQUE_ID);
 
 analytics.track("Signed Up", { "Referred By": "Friend" });
 
