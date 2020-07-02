@@ -20,7 +20,7 @@
   "author": "Aayush Garg",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aayushgarg14/expo-mixpanel-analytics/issues"
+    "url": "https://github.com/codekadiya/expo-mixpanel-analytics/issues"
   },
   "dependencies": {
     "buffer": "^5.0.8"
